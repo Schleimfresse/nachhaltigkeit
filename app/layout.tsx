@@ -10,9 +10,7 @@ import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: {
-    default: 'Vision für ein Wirtschaftssystem',
-  },
+  title: 'Vision für ein Wirtschaftssystem',
   robots: {
     index: true,
     follow: true,
