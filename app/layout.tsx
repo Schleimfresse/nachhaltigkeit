@@ -13,14 +13,6 @@ export const metadata: Metadata = {
   title: {
     default: 'Vision für ein Wirtschaftssystem',
   },
-  openGraph: {
-    title: '',
-    description: 'Vision für ein Wirtschaftssystem',
-    url: baseUrl,
-    siteName: 'My Portfolio',
-    locale: 'de_de',
-    type: 'website',
-  },
   robots: {
     index: true,
     follow: true,

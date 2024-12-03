@@ -1,21 +1,24 @@
-import { BlogPosts } from 'app/components/posts'
+import {BlogPosts} from 'app/components/posts'
+import {CustomMDX} from "./components/mdx";
+import {baseUrl} from "./sitemap";
+import {formatDate, getBlogPosts} from "./blog/utils";
 
 export default function Page() {
-  return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
-    </section>
-  )
+    let post = getBlogPosts().find((post) => post.slug === "short")
+
+    return (
+        <section>
+            <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+                Vision für ein Witrschaftssystem - lange Version
+            </h1>
+            <p className="mb-4">
+                {`Die Ausführungen zu der Vision eines neuen Wirtschaftssystem sind in zwei Ausführungen verfügbar. EIne gekürzte Version und eine erweiterte Version .`}
+            </p>
+
+            <div className="my-8">
+                <BlogPosts/>
+            </div>
+
+        </section>
+    )
 }
