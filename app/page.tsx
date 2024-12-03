@@ -9,7 +9,7 @@ export default function Page() {
     return (
         <section>
             <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-                Vision für ein Witrschaftssystem - lange Version
+                Vision für ein Wirtschaftssystem - Übersicht
             </h1>
             <p className="mb-4">
                 {`Die Ausführungen zu der Vision eines neuen Wirtschaftssystem sind in zwei Ausführungen verfügbar. EIne gekürzte Version und eine erweiterte Version .`}
